@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🎧 37,7 Radio Live</title>
+  <style>
+    body {
+      background: radial-gradient(circle at top, #1e1e2f, #0d0d14);
+      color: white;
+      font-family: "Segoe UI", sans-serif;
+      text-align: center;
+      padding: 60px;
+    }
+
+    h1 {
+      font-size: 2.2em;
+      margin-bottom: 30px;
+    }
+
+    .player {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 30px;
+      display: inline-block;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    }
+
+    audio {
+      width: 300px;
+      margin-top: 15px;
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-size: 0.9em;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <h1>🎶 37,7 Radio Live</h1>
+
+  <div class="player">
+    <p>Jebasz SUDOJ:</p>
+    <audio controls autoplay>
+      <source src="https://ying-figgier-melania.ngrok-free.dev/stream" type="audio/mpeg">
+      Twój przeglądarka nie obsługuje odtwarzacza audio.
+    </audio>
+  </div>
+
+  <div class="footer">
+    Powered by Icecast + Mixxx + Ngrok + Kyrylo Zharkovksyi🚀
+  </div>
+</body>
+</html>
