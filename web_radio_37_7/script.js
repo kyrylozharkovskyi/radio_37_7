@@ -24,3 +24,12 @@ const trackElement = document.getElementById("current-track");
 
 // fetchTrackInfo();
 // setInterval(fetchTrackInfo, 5000);
+
+const button = document.getElementById('playButton');
+const player = document.getElementById('radioPlayer');
+
+button.addEventListener('click', () => {
+  player.play();
+  button.style.display = 'none'; // ukrywa przycisk po starcie
+});
+

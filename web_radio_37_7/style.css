@@ -45,6 +45,72 @@ audio {
 
 
 
+/* === PLAYER === */
+.player {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Wyśrodkowanie w poziomie */
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 40px;
+  margin-top: 80px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(6px);
+}
+
+/* === PLAYER === */
+.player {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* wyśrodkowanie w poziomie */
+  justify-content: center; /* wyśrodkowanie w pionie */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(6px);
+  margin: 80px auto 0 auto; /* utrzymanie oryginalnej wielkości i centrowanie na stronie */
+  width: auto; /* nie rozciągać na całą szerokość */
+  max-width: 400px; /* opcjonalnie ograniczenie szerokości */
+}
+
+/* === PRZYCISK PLAY === */
+#playButton {
+  width: 80px;
+  height: 80px;
+  background: rgba(255, 255, 255, 0.1); /* subtelny kolor */
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(4px); /* lekki efekt blur */
+  transition: transform 0.2s, box-shadow 0.3s;
+  position: relative;
+}
+
+/* Hover efekt */
+#playButton:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.6);
+}
+
+/* Trójkąt PLAY w środku przycisku */
+#playButton::before {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-left: 25px solid white;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+
+
+
 /* === OCEAN I FALE W TLE === */
 .ocean {
   position: fixed;
